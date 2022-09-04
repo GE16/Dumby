@@ -21,6 +21,10 @@ body {
   width: 100vw;
 }
 
+img {
+  pointer-events: none;
+}
+
 .container > div {
   left: 0;
   position: absolute;
