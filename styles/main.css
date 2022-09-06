@@ -53,6 +53,14 @@ img {
   position: relative;
   width: 600px;
 }
+.four-1 .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+}
 
 .text-box p {
   margin: 0;
@@ -260,6 +268,9 @@ img {
   }
 
   .four .text-box {
+    width: 90%;
+  }
+  .four-1 .text-box {
     width: 90%;
   }
 
