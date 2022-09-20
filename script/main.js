@@ -1,5 +1,7 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
+  var audio = document.getElementById("song");
+  audio.volume = 0.1;
   Swal.fire({
     title: 'Do you want to play music in the background?',
     // text: "You won't be able to revert this!",
@@ -12,8 +14,6 @@ window.addEventListener('load', () => {
   }).then((result) => {
     if (result.isConfirmed) {
       document.querySelector('.song').play();
-      var audio = document.getElementsByClassName("myaudio");
-      audio.volume = 0.2;
 
       resolveFetch().then(animationTimeline());
     } else {
