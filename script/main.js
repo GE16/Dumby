@@ -12,6 +12,9 @@ window.addEventListener('load', () => {
   }).then((result) => {
     if (result.isConfirmed) {
       document.querySelector('.song').play();
+      var audio = document.getElementsByClassName("myaudio");
+      audio.volume = 0.2;
+
       resolveFetch().then(animationTimeline());
     } else {
       resolveFetch().then(animationTimeline());
